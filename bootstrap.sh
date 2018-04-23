@@ -16,8 +16,6 @@ rm miniconda.sh
 conda update --yes conda
 conda create --yes -n base numpy scipy pandas matplotlib argcomplete jupyter flake8
 
-source activate base
-
 cp bash_profile ~/.bash_profile
 source ~/.bash_profile
 
