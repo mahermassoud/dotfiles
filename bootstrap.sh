@@ -1,3 +1,8 @@
+cp bash_profile ~/.bash_profile
+source ~/.bash_profile
+
+cp vimrc  ~/.vimrc
+
 # download and setup conda, taken from Daniel McDonal's dotfiles repo
 # https://github.com/wasade/dotfiles/blob/master/bin/bootstrap.sh
 if [ "$(uname)" == "Darwin" ]
@@ -9,14 +14,10 @@ fi
 
 chmod +x miniconda.sh
 ./miniconda.sh -b
-export PATH=${HOME}/miniconda3/bin:$PATH
+echo 'export PATH=${HOME}/miniconda3/bin:$PATH' >> ~/.bash_profile
+source ~/.bash_profile
 rm miniconda.sh
 
 # Make a conda env called base
 conda update --yes conda
 conda create --yes -n base numpy scipy pandas matplotlib argcomplete jupyter flake8
-
-cp bash_profile ~/.bash_profile
-source ~/.bash_profile
-
-cp vimrc  ~/.vimrc
