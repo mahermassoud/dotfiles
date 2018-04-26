@@ -14,7 +14,7 @@ fi
 
 chmod +x miniconda.sh
 ./miniconda.sh -b
-echo 'export PATH=${HOME}/miniconda3/bin:$PATH' >> ~/.bash_profile
+echo 'export PATH=${HOME}/miniconda3/bin:$PATH' >> ${HOME}/.bash_profile
 source ~/.bash_profile
 rm miniconda.sh
 
