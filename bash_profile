@@ -1,6 +1,70 @@
-export PS1="\[\e[0;36m\]@\h \[\e[1;33m\]\W \[\e[2;37m\][\t] \[\e[0;36m\]$ \[\e[0;32m\]"
+# added massoud to have gradle
+export PATH="/Users/massoudmaher/gradle-2.10/bin/:$PATH"
+export PATH="/Users/massoudmaher/:$PATH"
+
+# added by massoud to have homer
+export PATH="/Users/massoudmaher/homer/bin/:$PATH"
+
+# added by massoud to have sra-toolit
+export PATH="/Users/massoudmaher/Documents/Code/sratoolkit.2.9.6-1-mac64/bin:$PATH"
+
+# added by massoud to have bwa
+export PATH="/Users/massoudmaher/Documents/Code/bwa-0.7.17:$PATH"
+
+# added by massoud to have macvim
+export PATH="/Applications/MacVim.app/Contents/bin/:$PATH"
+
+
+picardpath="/Users/massoudmaher/Documents/Code/picard/picard.jar"
+
+cd ~/Documents/Code
+
+export PS1="\[\e[0;36m\]@\h \[\e[1;33m\]\W \[\e[0;36m\]$ \[\e[0;32m\]"
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-alias ls='ls -GFh'
 
-alias benv='source activate base' 
+alias ls='ls -GFh'
+alias dockertom='docker run -v $PWD:/home/ubuntu -i -t oncogx/dockertom /bin/bash'
+alias cse='ssh -X mamaher@ucsd.edu'
+alias sshl='ssh mamaher@ieng6-251.ucsd.edu'
+alias sshj='ssh maherm@juno.mskcc.org'
+alias jpnb='jupyter notebook'
+alias jplb='jupyter lab'
+alias ipynb='ipython notebook'
+alias sact='source activate'
+alias cact='conda activate'
+alias cdc='cd /Users/massoudmaher/Documents/Code/'
+alias cdd='cd /Users/massoudmaher/data/'
+alias deact="deactivate"
+alias pysrc="pip install -e ."
+
+export COLOSSUS_API_USERNAME=maherm
+export COLOSSUS_API_PASSWORD=loveisgone
+
+export TANTALUS_API_USERNAME=Massoud
+export TANTALUS_API_PASSWORD=loveisgone
+
+export AZURE_STORAGE_ACCOUNT='singlecellresults'
+export CLIENT_ID='ca12df9c-ee3c-4e1b-a747-fe92007ae4f5'
+export TENANT_ID='31126879-74b8-42b9-8ae6-68b3a277ebdc'
+export SUBSCRIPTION_ID='31126879-74b8-42b9-8ae6-68b3a277ebdc'
+export SECRET_KEY='hADaVZd0iYlnyTWTF0Tg2M1LpiZo90M15/YGryOrt9M='
+export RESOURCE_GROUP='scdna-data'
+export AZURE_KEYVAULT_ACCOUNT='scdnaprod'
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/massoudmaher/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/massoudmaher/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/massoudmaher/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/massoudmaher/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

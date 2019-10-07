@@ -35,3 +35,6 @@ set ai
 set si
 
 colorscheme elflord
+
+"makes it so when you paste stuff it doesn't indent a bunch
+set paste
