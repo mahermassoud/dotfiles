@@ -14,6 +14,19 @@ export PATH="/Users/massoudmaher/Documents/Code/bwa-0.7.17:$PATH"
 # added by massoud to have macvim
 export PATH="/Applications/MacVim.app/Contents/bin/:$PATH"
 
+# added by massoud to have bowtie
+export PATH="/Users/massoudmaher/bowtie2-2.3.5.1-macos-x86_64:$PATH"
+
+# added by massoud to have ninja
+# doesnt work
+#export PATH="/Users/massoudmaher/Documents/Code/NINJA-OPS/bin:$PATH"
+
+# added by massoud to have shi7
+export PATH="/Users/massoudmaher/Documents/Code/shi7_0.9.9_mac_release:$PATH"
+
+# added by massoud to have bugbase
+export BUGBASE_PATH=/Users/massoudmaher/Documents/Code/BugBase
+export PATH=$PATH:$BUGBASE_PATH/bin
 
 picardpath="/Users/massoudmaher/Documents/Code/picard/picard.jar"
 
@@ -28,6 +41,7 @@ alias dockertom='docker run -v $PWD:/home/ubuntu -i -t oncogx/dockertom /bin/bas
 alias cse='ssh -X mamaher@ucsd.edu'
 alias sshl='ssh mamaher@ieng6-251.ucsd.edu'
 alias sshj='ssh maherm@juno.mskcc.org'
+alias sshp='ssh paperspace@65.49.54.83'
 alias jpnb='jupyter notebook'
 alias jplb='jupyter lab'
 alias ipynb='ipython notebook'
@@ -37,6 +51,16 @@ alias cdc='cd /Users/massoudmaher/Documents/Code/'
 alias cdd='cd /Users/massoudmaher/data/'
 alias deact="deactivate"
 alias pysrc="pip install -e ."
+alias lc="wc -l"
+alias sbp="source ~/.bash_profile"
+alias lgrep="ls -l | grep"
+alias clist="conda env list"
+alias cdf="cd /Users/massoudmaher/Documents/Code/fructose/"
+alias cdm="cd /Users/massoudmaher/Documents/Code/fructose/data/montrose"
+alias cddl="cd /Users/massoudmaher/Documents/Code/cs5787"
+
+# cuts off output for some reason
+export ninja="python /Users/massoudmaher/Documents/Code/NINJA-OPS/bin/ninja.py"
 
 export COLOSSUS_API_USERNAME=maherm
 export COLOSSUS_API_PASSWORD=loveisgone
