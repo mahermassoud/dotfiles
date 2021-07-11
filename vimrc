@@ -43,5 +43,9 @@ let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 "highlight things over 80 characters per line
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%80v.\+/
+#highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+#match OverLength /\%80v.\+/
+
+"add syntax highlighting for Snakefiles
+au BufNewFile,BufRead Snakefile set syntax=snakemake
+au BufNewFile,BufRead *.snake set syntax=snakemake

@@ -17,6 +17,15 @@ export PATH="/Applications/MacVim.app/Contents/bin/:$PATH"
 # added by massoud to have bowtie
 export PATH="/Users/massoudmaher/bowtie2-2.3.5.1-macos-x86_64:$PATH"
 
+# added by massoud to have flutter
+export PATH="/Users/massoudmaher/Documents/flutter/bin:$PATH"
+
+# added by massoud to have postgre cli
+export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+
+# added by massoud to have subread / featureCounts
+export PATH="/Users/massoudmaher/subread-2.0.1-source/bin:$PATH"
+
 # added by massoud to have ninja
 # doesnt work
 #export PATH="/Users/massoudmaher/Documents/Code/NINJA-OPS/bin:$PATH"
@@ -38,16 +47,16 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 
 alias ls='ls -GFh'
 alias dockertom='docker run -v $PWD:/home/ubuntu -i -t oncogx/dockertom /bin/bash'
-alias cse='ssh -X mamaher@ucsd.edu'
-alias sshl='ssh mamaher@ieng6-251.ucsd.edu'
-alias sshj='ssh maherm@juno.mskcc.org'
-alias sshp='ssh paperspace@65.49.54.83'
+alias ssha='ssh mam4020@aphrodite.med.cornell.edu'
+alias sshp='ssh mam4020@pascal.med.cornell.edu'
 alias jpnb='jupyter notebook'
 alias jplb='jupyter lab'
 alias ipynb='ipython notebook'
 alias sact='source activate'
 alias cact='conda activate'
 alias cdc='cd /Users/massoudmaher/Documents/Code/'
+alias chc='cd /Volumes/iomega/Code'
+
 alias cdd='cd /Users/massoudmaher/data/'
 alias deact="deactivate"
 alias pysrc="pip install -e ."
@@ -55,9 +64,9 @@ alias lc="wc -l"
 alias sbp="source ~/.bash_profile"
 alias lgrep="ls -l | grep"
 alias clist="conda env list"
-alias cdf="cd /Users/massoudmaher/Documents/Code/fructose/"
-alias cdm="cd /Users/massoudmaher/Documents/Code/fructose/data/montrose"
-alias cddl="cd /Users/massoudmaher/Documents/Code/cs5787"
+alias studioR="/Library/Frameworks/R.framework/Resources/bin/R"
+alias node="/usr/local/bin/node" # Added by massoud so node command doesn't use conda install
+alias npm="/usr/local/bin/npm" # Added by massoud so node command doesn't use conda install
 
 # cuts off output for some reason
 export ninja="python /Users/massoudmaher/Documents/Code/NINJA-OPS/bin/ninja.py"
